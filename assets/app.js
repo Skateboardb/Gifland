@@ -50,6 +50,7 @@ $(function() {
 
 	// Gif search
 	function giphySearch(queryString) {
+		// hello
 		$.ajax(
 			`https://api.giphy.com/v1/gifs/search?q=${queryString}&api_key=daUVhRpYIvscQp9r7t2QhlleMB4MXTOR&limit=12&offset=${offset}`,
 			{
