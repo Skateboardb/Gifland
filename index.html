@@ -17,7 +17,11 @@
 
 		<!-- <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet"> -->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
 		<script src="./assets/app.js"></script>
 	</head>
 
@@ -31,10 +35,11 @@
         content -->
 
 		<nav class="navbar navbar-light bg-light justify-content-between">
-			<a class="navbar-brand">Gifyland</a>
-			<form class="form-inline">
+			<a class="navbar-brand">Giphyland</a>
+			<form class="form-inline" id="search-bar">
 				<input
 					class="form-control mr-sm-2"
+					id="search-field"
 					type="search"
 					placeholder="Search"
 					aria-label="Search"
@@ -44,19 +49,32 @@
 				</button>
 			</form>
 		</nav>
-		<container>
-			<div class="row">
-				<div class="jumbotron-fluid">
-					<h1>Welcome to Gifyland!</h1>
-					<h4>
-						Enter a keyword above to search for gifs and load them to this page.
-					</h4>
+		<!-- <container class="container-fluid"> -->
+		<!-- <div class="row"> -->
+			<div class="jumbotron-fluid">
+				<div class="row ">
+                    <div class="header-content col-10">
+					<h1 class="col-12">Welcome to Giphyland!</h1>
+					<h4 class="col-12">
+						Enter a keyword above or click one of the suggestions below to get
+						started.
+                    </h4>
+                </div>
 				</div>
+
+				<div class="col-10" id="suggestions-container"></div>
 			</div>
-			<div class="row">
-				<div class="col-10 gifs-container"></div>
-			</div>
-		</container>
+		</div>
+		<!-- <div class="row"> -->
+
+            <div class="row gifs-container justify-content-center">
+
+            </div>
+            
+        </div>
+        <button class="btn btn-outline-primary my-2 my-sm-0 hide" id="moar-btn" >moar</button>   
+        
+		<!-- </container> -->
 
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
