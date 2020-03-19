@@ -5,3 +5,8 @@
 .hide {
 	display: none;
 }
+
+.button-holder {
+	text-align: center;
+	padding-top: 15px;
+}
